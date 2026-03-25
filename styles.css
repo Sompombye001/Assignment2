@@ -1,0 +1,106 @@
+/* =========================
+   RESET & GLOBAL STYLES
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  padding: 25px;
+  position: fixed;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #cbd5f5;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.sidebar a:hover {
+  background: #1e293b;
+  color: white;
+}
+
+/* =========================
+   CONTENT AREA
+========================= */
+.content {
+  margin-left: 280px;
+  padding: 40px;
+  max-width: 900px;
+}
+
+/* Sections spacing */
+section {
+  margin-bottom: 60px;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+/* Paragraph styling (BOX MODEL DEMO) */
+p {
+  background: white;
+  padding: 15px;              /* inside space */
+  margin-top: 10px;           /* outside space */
+  border-left: 5px solid #3b82f6;
+  border-radius: 5px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
